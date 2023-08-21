@@ -13,7 +13,7 @@ function getCardInfo(event) {
     total += parseInt(priseString);
     const totalPriseString = document.getElementById('total-prise');
     totalPriseString.innerText = total;
-   
+    getTotalToValidateButton(total);
     if (appliedCoupon) {
         getInputValue();
     }
@@ -44,15 +44,11 @@ function resetCoupon() {
 }
 
 function updateTotal(total,previousTotal) {
-    const previousTotalValue =previousTotal;
+    const previousTotalValue = previousTotal;
     const totalValue = total;
     const discount = previousTotal - total;
     const fixedDiscount = discount.toFixed(1);
     setTheValue(fixedDiscount)
-    if(totalValue > 0){
-        const btn = document.getElementById("purchase-btn");
-        btn.removeAttribute('disabled',"");
-    }
     const totalPriseString = document.getElementById('in-total');
     totalPriseString.innerText = total;
 
@@ -76,5 +72,15 @@ document.getElementById('go-home').addEventListener('click', function(){
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
+    }
+}
+function getTotalToValidateButton(total){
+    if( total > 0){
+        const btn = document.getElementById("purchase-btn");
+        btn.removeAttribute('disabled',"");
+    }
+    if(total > 200){
+        const btn = document.getElementById("apply-btn");
+        btn.removeAttribute('disabled',"");
     }
 }
