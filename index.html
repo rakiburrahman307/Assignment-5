@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header class="container mx-auto mb-24">
+    <header class="mx-auto mb-24">
         <div class="hero min-h-screen bg-[#F9F6E2]">
             <div class="hero-content flex-col lg:flex-row-reverse gap-10">
                 <img src="/images/Summer 1.png" class="max-w-sm rounded-lg" />
@@ -39,7 +39,7 @@
         </div>
     </header>
     <main>
-        <section class="container mx-auto mb-32 flex flex-col lg:flex-row gap-8 justify-center">
+        <section class="mx-auto mb-32 flex flex-col lg:flex-row gap-8 justify-center">
             <div>
                 <h2 class="text-4xl font-semibold mb-8 text-center lg:text-left">Kitchenware</h2>
                 <div class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8 justify-center gap-8">
@@ -143,24 +143,24 @@
             <div class="mt-20 mx-auto">
                 <div class="bg-gray-200 p-12 w-[350px]">
                     <h2 class="text-2xl font-medium mb-5">Have Coupon?</h2>
-                    <input type="text" placeholder="Enter Coupon Code Here" class="input input-bordered w-36"
+                    <input type="text" placeholder="Enter Coupon" class="input input-bordered w-36"
                         id="input-field" />
                     <button class="btn bg-[#E527B2] text-white font-semibold hover:bg-pink-600"
                         onclick="getInputValue()" id="apply-btn" disabled>Apply</button>
                 </div>
                 <div class="w-[350px]">
-                    <div id="all-items">
+                    <div id="all-items" class="bg-gray-100 p-6 text-xl font-semibold">
 
                     </div>
-                    <hr class="mb-5">
-                    <div>
+                    <hr>
+                    <div class="bg-gray-200 p-6">
                         <p class="font-medium text-xl">Total Price: <span id="total-prise">00</span> TK</p>
                         <p class="font-medium text-xl">Discount: <span id="discount-total">00</span> TK</p>
                         <p class="font-medium text-xl">Total: <span id="in-total">00</span> TK</p>
                     </div>
                     <hr class="mb-5">
-                    <button class="bg-[#E527B2] px-16 py-5 w-[350px] text-white font-bold hover:bg-pink-600 rounded-lg"
-                        onclick="my_modal_5.showModal()" id="purchase-btn" disabled>Make Purchase</button>
+                    <button disabled class="btn bg-[#E527B2] px-16  w-[350px] text-white font-bold hover:bg-pink-600 rounded-lg" 
+                        onclick="my_modal_5.showModal()" id="purchase-btn">Make Purchase</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <form method="dialog" class="modal-box text-center">
                             <img class="mx-auto" src="/images/congo.png" alt="Congratulations">
