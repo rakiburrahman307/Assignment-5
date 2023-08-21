@@ -21,8 +21,8 @@ function getCardInfo(event) {
 
 function getInputValue() {
     const getInputField = document.getElementById('input-field');
-    const couponCode = getInputField.value; 
-      
+    const couponCode = getInputField.value;
+
     if (total < 200) {
         alert("Total price is too low");
         resetCoupon();
@@ -31,7 +31,7 @@ function getInputValue() {
         const discount = total * 0.2;
         total -= discount;
         appliedCoupon = true;
-        updateTotal(total,previousTotal);
+        updateTotal(total, previousTotal);
     } else {
         alert("Invalid Coupon Code");
         resetCoupon();
@@ -40,10 +40,10 @@ function getInputValue() {
 
 function resetCoupon() {
     appliedCoupon = false;
-    updateTotal(total,previousTotal);
+    updateTotal(total, previousTotal);
 }
 
-function updateTotal(total,previousTotal) {
+function updateTotal(total, previousTotal) {
     const previousTotalValue = previousTotal;
     const totalValue = total;
     const discount = previousTotal - total;
@@ -53,12 +53,12 @@ function updateTotal(total,previousTotal) {
     totalPriseString.innerText = total;
 
 }
-function setTheValue(discount){
+function setTheValue(discount) {
     const discountString = document.getElementById('discount-total');
     discountString.innerText = discount;
 }
 
-document.getElementById('go-home').addEventListener('click', function(){
+document.getElementById('go-home').addEventListener('click', function () {
     const clearChild = document.getElementById('all-items');
     const clearDiscount = document.getElementById('discount-total');
     const clearPriceTotal = document.getElementById('total-prise');
@@ -74,13 +74,13 @@ function removeAllChildNodes(parent) {
         parent.removeChild(parent.firstChild);
     }
 }
-function getTotalToValidateButton(total){
-    if( total > 0){
+function getTotalToValidateButton(total) {
+    if (total > 0) {
         const btn = document.getElementById("purchase-btn");
-        btn.removeAttribute('disabled',"");
+        btn.removeAttribute('disabled', "");
     }
-    if(total > 200){
+    if (total > 200) {
         const btn = document.getElementById("apply-btn");
-        btn.removeAttribute('disabled',"");
+        btn.removeAttribute('disabled', "");
     }
 }
