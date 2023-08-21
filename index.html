@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Summer sale</title>
      <!-- Google Font Link -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
              font-family: 'Work Sans', sans-serif;
          }
      </style>
-     <title>Summer sale</title>
+
 </head>
 <body>
     <header class="container mx-auto mb-24">
@@ -39,7 +39,7 @@
                 <h2 class="text-4xl font-semibold mb-8 text-center lg:text-left">Kitchenware</h2>
                 <div class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8 justify-center gap-8">
                     <!-- first card  -->
-                    <div class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
+                    <div onclick="getCardInfo(this)" class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
                         <figure><img class="mb-8" src="/images/prod1.png" alt="prod" /></figure>
                         <div class="card-body space-y-2 bg-base-100 rounded-lg text-center">
                             <div class="rating flex justify-center ">
@@ -49,12 +49,14 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
-                        <h2 class="text-xl font-semibold">K. Accessories</h2>
-                        <p class="text-xl">39.00 TK</p>
+                       
+                            <h2 class="text-xl font-semibold">K. Accessories</h2>
+
+                            <h3 class="text-xl">39.00 TK</h3>
                         </div>
                       </div>
                     <!-- second card  -->
-                    <div class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
+                    <div onclick="getCardInfo(this)" class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
                         <figure><img class="mb-8" src="/images/prod2.png" alt="prod" /></figure>
                         <div class="card-body space-y-2 bg-base-100 rounded-lg text-center">
                             <div class="rating flex justify-center ">
@@ -69,7 +71,7 @@
                         </div>
                       </div>
                     <!-- Third card  -->
-                    <div class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
+                    <div onclick="getCardInfo(this)" class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
                         <figure><img class="mb-8" src="/images/prod3.png" alt="prod" /></figure>
                         <div class="card-body space-y-2 bg-base-100 rounded-lg text-center">
                             <div class="rating flex justify-center ">
@@ -79,7 +81,7 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
-                        <h2 class="text-xl font-semibold">K. Accessories</h2>
+                        <h2 class="text-xl font-semibold">Home Cooker</h2>
                         <p class="text-xl">49.00 TK</p>
                         </div>
                       </div>
@@ -87,7 +89,7 @@
                 <h2 class="text-4xl font-semibold mb-8 text-center lg:text-left">Sportswear</h2>
                 <div class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
                     <!-- first card  -->
-                    <div class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
+                    <div onclick="getCardInfo(this)" class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
                         <figure><img class="mb-8" src="/images/prod4.png" alt="prod" /></figure>
                         <div class="card-body space-y-2 bg-base-100 rounded-lg text-center">
                             <div class="rating flex justify-center ">
@@ -97,12 +99,12 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
-                        <h2 class="text-xl font-semibold">K. Accessories</h2>
+                        <h2 class="text-xl font-semibold">Sports Back Cap</h2>
                         <p class="text-xl">49.00 TK</p>
                         </div>
                       </div>
                     <!-- second card  -->
-                    <div class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
+                    <div onclick="getCardInfo(this)" class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
                         <figure><img class="mb-8" src="/images/prod5.png" alt="prod" /></figure>
                         <div class="card-body space-y-2 bg-base-100 rounded-lg text-center">
                             <div class="rating flex justify-center ">
@@ -112,12 +114,12 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
-                        <h2 class="text-xl font-semibold">K. Accessories</h2>
+                        <h2 class="text-xl font-semibold">Full Jersey Set</h2>
                         <p class="text-xl">69.00 TK</p>
                         </div>
                       </div>
                     <!-- Third card  -->
-                    <div class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
+                    <div onclick="getCardInfo(this)" class="card card-compact w-80 bg-gray-100 shadow-xl p-5 mb-8">
                         <figure><img class="mb-8" src="/images/prod6.png" alt="prod" /></figure>
                         <div class="card-body space-y-2 bg-base-100 rounded-lg text-center">
                             <div class="rating flex justify-center ">
@@ -127,7 +129,7 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
-                        <h2 class="text-xl font-semibold">K. Accessories</h2>
+                        <h2 class="text-xl font-semibold">Sports cates</h2>
                         <p class="text-xl">159.00 TK</p>
                         </div>
                       </div>
@@ -136,24 +138,37 @@
            <div class="mt-20 mx-auto">
             <div class="bg-gray-50 p-12 w-[350px]">
                 <h2 class="text-2xl font-medium mb-5">Have Coupon?</h2>
-                <input type="text" placeholder="Enter Coupon Code Here" class="input input-bordered w-36" />
-                <button class="btn btn-active btn-primary">Apply</button>
+                <input type="text" placeholder="Enter Coupon Code Here" class="input input-bordered w-36" id="input-field"/>
+                <button class="btn bg-[#E527B2] text-white font-semibold hover:bg-pink-600" onclick="getInputValue()" id="apply-btn" >Apply</button>
             </div>
             <div class="w-[350px]">
-                <div>
+                <div id="all-items">
 
                 </div>
                 <hr class="mb-5">
                 <div>
-                    <p class="font-medium text-xl">Total Price: <span>00</span></p>
-                    <p class="font-medium text-xl">Discount: <span>00</span></p>
-                    <p class="font-medium text-xl">Total: <span>00</span></p>
+                    <p class="font-medium text-xl" >Total Price: <span id="total-prise">00</span> TK</p>
+                    <p class="font-medium text-xl">Discount: <span id="discount-total">00</span> TK</p>
+                    <p class="font-medium text-xl">Total: <span id="in-total">00</span> TK</p>
                 </div>
                 <hr class="mb-5">
-                <button class="bg-[#E527B2] px-16 py-5 w-[350px] text-white font-bold hover:bg-pink-600">Make Purchase</button>
+                <button class="bg-[#E527B2] px-16 py-5 w-[350px] text-white font-bold hover:bg-pink-600 rounded-lg" onclick="my_modal_5.showModal()" id="purchase-btn" disabled>Make Purchase</button>
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box text-center">
+                        <img class="mx-auto" src="/images/congo.png" alt="Congratulations">
+                      <h3 class="font-bold text-lg">Congratulations</h3>
+                      <p class="py-4">Your Purchase the product</p>
+                      <div class="text-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-[#E527B2] text-white font-semibold hover:bg-pink-600" id="go-home">Go Home</button>
+                      </div>
+                    </form>
+                  </dialog>
             </div>
            </div>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
+
