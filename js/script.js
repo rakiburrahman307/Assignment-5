@@ -11,8 +11,9 @@ function getCardInfo(event) {
 
     const priseString = event.children[1].children[2].innerText.split(" ")[0];
     total += parseInt(priseString);
+    const toFixeNumber = total.toFixed(1);
     const totalPriseString = document.getElementById('total-prise');
-    totalPriseString.innerText = total;
+    totalPriseString.innerText = toFixeNumber;
     getTotalToValidateButton(total);
     if (appliedCoupon) {
         getInputValue();
@@ -50,7 +51,7 @@ function updateTotal(total, previousTotal) {
     const fixedDiscount = discount.toFixed(1);
     setTheValue(fixedDiscount)
     const totalPriseString = document.getElementById('in-total');
-    totalPriseString.innerText = total;
+    totalPriseString.innerText = total.toFixed(1);
 
 }
 function setTheValue(discount) {
